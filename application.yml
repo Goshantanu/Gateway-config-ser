@@ -7,3 +7,14 @@
         register-with-eureka: true
         service-url:
           defaultZone: http://localhost:8761/eureka
+
+
+    spring:
+      data:
+        mongodb:
+          uri: mongodb://localhost:27017
+          database: microservice1
+      application:
+        name: USER-SERVICE
+      config:
+        import: optional:configserver:http://localhost:8005
