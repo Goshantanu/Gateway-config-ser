@@ -11,6 +11,7 @@
     server:
       port: 8001
 
+
     spring:
       data:
         mongodb:
@@ -18,3 +19,16 @@
           database: microservice1
       application:
         name: USER-SERVICE
+
+
+    server:
+      port: 8002        
+
+
+     spring:
+      data:
+        mongodb:
+          uri: mongodb://localhost:27017
+          database: microservice2
+      application:
+        name: HOTEL-SERVICE       
